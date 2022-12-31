@@ -28,8 +28,14 @@ return require('packer').startup(function(use)
 	use {
 	   'feline-nvim/feline.nvim',
 	   requires = {
-		   'gitsigns.nvim',
-		   'nvim-web-devicons'
+		   'lewis6991/gitsigns.nvim',
+		   'kyazdani42/nvim-web-devicons'
 	   }
-   	}
+	}
+
+	-- diffview
+	use {
+	  'sindrets/diffview.nvim',
+	  require = "nvim-lua/prenary.nvim"
+	}
 end)
