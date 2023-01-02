@@ -38,4 +38,7 @@ return require('packer').startup(function(use)
 	  'sindrets/diffview.nvim',
 	  require = "nvim-lua/prenary.nvim"
 	}
+
+	-- lazygit
+	use 'kdheepak/lazygit.nvim'
 end)
